@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
-  User.findById('5baa2528563f16379fc8a610')
+  User.findById('5f215c00b2066243608b5e33')
     .then(user => {
       req.user = user;
       next();
@@ -34,7 +34,7 @@ app.use(errorController.get404);
 
 mongoose
   .connect(
-    'mongodb+srv://matthias:<Password>@node-complete-cqski.mongodb.net/shop?retryWrites=true&w=majority'
+    'mongodb+srv://matthias:<password>@node-complete.cqski.mongodb.net/shop?retryWrites=true&w=majority'
   )
   .then(result => {
     User.findOne().then(user => {
@@ -42,7 +42,7 @@ mongoose
         const user = new User({
           name: 'Max',
           email: 'max@test.com',
-          cart:{
+          cart: {
             items: []
           }
         });
