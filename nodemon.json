@@ -1,0 +1,8 @@
+{
+    "env": {
+        "MONGO_USER": "matthias",
+        "MONGO_PASSWORD": "bjs0220",
+        "MONGO_DEFAULT_DATABASE": "shop?retryWrites=true&w=majority",
+        "STRIPE_KEY": "sk_test_51Iz5I0EbSLnHJ4i1EPiIoxRtidi9jShGHDksubZR9Y2VyzNqTa8g6foLXo6IGWb75FiNf41As6NSYeUMK4KKmCq200UgJp2VSx"
+    }
+}
